@@ -1,10 +1,9 @@
 <script>
 
-	const ResponsiveBehavior = subclass => class extends subclass {
+	const GrainResponsiveBehavior = subclass => class extends subclass {
 
 		static get observers() {
 			return [
-				// Observer method name, followed by a list of dependencies, in parenthesis
 				'_responsiveChange(isMobile, isTablet, isDesktop)'
 			]
 		}
